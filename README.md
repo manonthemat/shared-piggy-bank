@@ -1,6 +1,6 @@
 # Shared Piggy Bank
 
-This repo has a simple Plutus Contract that acts as a shared piggy bank.
+This repo houses a simple Plutus Contract that acts as a shared piggy bank.
 
 ## Setting up
 
@@ -25,9 +25,9 @@ and you'll have a working development environment for now and the future wheneve
 
 The build should not take too long if you correctly set up the binary cache. If it starts building GHC, stop and setup the binary cache.
 
-Afterwards, the command `cabal build` from the terminal should work (if `cabal` couldn't resolve the dependencies, run `cabal update` and then `cabal build`).
+Afterwards, the command `cabal build server` from the terminal should work (if `cabal` couldn't resolve the dependencies, run `cabal update` and then `cabal build`).
 
-## The Plutus Application Backend (PAB) example
+## The Plutus Application Backend (PAB)
 
 With the PAB we can serve and interact with contracts over a web API.
 You can read more about the PAB here: [PAB Architecture](https://github.com/input-output-hk/plutus/blob/master/plutus-pab/ARCHITECTURE.adoc).
@@ -36,7 +36,7 @@ Here, the PAB is configured with one contract, the `PiggyBank` contract from `./
 
 Here's an example of running and interacting with this contract via the API. For this it will help if you have `jq` installed.
 
-1. Build all the things
+1. Compile the contract and build the server:
 
 ```
 cabal build server
