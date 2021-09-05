@@ -39,7 +39,7 @@ Here's an example of running and interacting with this contract via the API. For
 1. Build all the things
 
 ```
-cabal build
+cabal build server
 ```
 
 2. Run the PAB binary:
